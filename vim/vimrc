@@ -11,6 +11,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+" call pathogen#helptags()
 syntax on
 set tabstop=2
 set smarttab
@@ -220,9 +221,6 @@ cmap w!! w !sudo tee % >/dev/null
 "nnoremap _dt :set ft=htmldjango<CR>
 "nnoremap _jt :set ft=htmljinja<CR>
 
-" VCS Stuff
-let VCSCommandMapPrefix = "<leader>h"
-
 " Disable useless HTML5 junk
 let g:event_handler_attributes_complete = 0
 let g:rdfa_attributes_complete = 0
@@ -243,8 +241,10 @@ set vb
 
 if has('gui_running')
 	set guifont=Menlo:h14
-	let g:zenburn_high_Contrast=1
-	colors zenburn
+	let g:darkburn_high_Contrast=1
+	colors darkburn
+" let g:zenburn_high_Contrast=1
+" colors zenburn
 " colorscheme molokai
 " colorscheme sri
 " set background=dark
