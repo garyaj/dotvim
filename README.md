@@ -18,6 +18,8 @@ Installation
 Clone the repository into your home directory and create a symbolic link to the
 vim subdirectory e.g.:
   ln -s dotfiles/vim .vim
+Then create a symbolic link to the vimrc file:
+  ln -s dotfiles/vim/vimrc .vimrc
 
 Credits
 -------
