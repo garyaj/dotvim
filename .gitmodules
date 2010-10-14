@@ -22,18 +22,12 @@
 [submodule "vim/bundle/fuzzyfinder"]
 	path = vim/bundle/fuzzyfinder
 	url = git://github.com/vim-bundles/fuzzyfinder.git
-[submodule "vim/bundle/Command-T"]
-	path = vim/bundle/Command-T
-	url = git://github.com/vim-scripts/Command-T.git
 [submodule "vim/bundle/Haml"]
 	path = vim/bundle/Haml
 	url = git://github.com/vim-scripts/Haml.git
 [submodule "vim/bundle/Markdown"]
 	path = vim/bundle/Markdown
 	url = git://github.com/vim-scripts/Markdown.git
-[submodule "vim/bundle/Rainbow-Parenthsis-Bundle"]
-	path = vim/bundle/Rainbow-Parenthsis-Bundle
-	url = git://github.com/vim-scripts/Rainbow-Parenthsis-Bundle.git
 [submodule "vim/bundle/SuperTab"]
 	path = vim/bundle/SuperTab
 	url = git://github.com/vim-scripts/SuperTab.git
