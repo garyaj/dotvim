@@ -76,3 +76,9 @@
 [submodule "vim/bundle/Zenburn"]
 	path = vim/bundle/Zenburn
 	url = git://github.com/vim-scripts/Zenburn.git
+[submodule "vim/bundle/Command-T"]
+	path = vim/bundle/Command-T
+	url = git://github.com/vim-scripts/Command-T.git
+[submodule "vim/bundle/rainbow"]
+	path = vim/bundle/rainbow
+	url = git://github.com/sethwoodworth/rainbow_parenthsis.vim.git
