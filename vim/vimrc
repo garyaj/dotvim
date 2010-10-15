@@ -207,7 +207,7 @@ inoremap jj <ESC>
 nmap <leader><tab> :Sscratch<cr><C-W>x<C-j>:resize 15<cr>
 
 " Diff
-nmap <leader>d :!hg diff %<cr>
+nmap <leader>d :!git diff %<cr>
 
 " Rainbows!
 nmap <leader>R :RainbowParenthesesToggle<CR>

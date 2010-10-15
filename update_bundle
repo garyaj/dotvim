@@ -19,7 +19,6 @@ my $git_bundles = [
   "git://github.com/vim-scripts/Command-T.git",
   "git://github.com/vim-scripts/Haml.git",
   "git://github.com/vim-scripts/Markdown.git",
-  "git://github.com/sethwoodworth/rainbow_parenthsis.vim.git",
   "git://github.com/vim-scripts/SuperTab.git",
   "git://github.com/vim-scripts/Zephyr-Color-Scheme.git",
   "git://github.com/vim-scripts/ZoomWin.git",
