@@ -11,7 +11,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
-" call pathogen#helptags()
+call pathogen#helptags()
 syntax on
 set tabstop=2
 set smarttab
