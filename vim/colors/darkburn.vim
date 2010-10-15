@@ -205,6 +205,7 @@ if &t_Co > 255
 
     if exists("g:darkburn_high_Contrast")
 				hi Normal guibg=Black ctermbg=Black
+				hi ColorColumn ctermbg=darkgrey guibg=darkgrey
         " hi Normal ctermfg=188 ctermbg=234
     else
         hi Normal ctermfg=188 ctermbg=237
