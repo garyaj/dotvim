@@ -81,7 +81,8 @@ set listchars=tab:▸\ ,eol:¬
 " set background=light gives a different style, feel free to choose between them. 
 set background=dark 
 " colors neverland-ansi_bg 
-colors elflord 
+" colors elflord 
+	colors darkburn
 " colors peaksea 
 " colors vividchalk 
 " colors 256-jungle 
