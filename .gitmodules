@@ -1,81 +1,108 @@
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
 	url = git://github.com/vim-scripts/fugitive.vim.git
+  ignore = untracked
 [submodule "vim/bundle/vim-yankring"]
 	path = vim/bundle/vim-yankring
 	url = git://github.com/chrismetcalf/vim-yankring.git
+  ignore = untracked
 [submodule "vim/bundle/snipmate"]
 	path = vim/bundle/snipmate
 	url = git://github.com/gmarik/snipmate.vim.git
+  ignore = untracked
 [submodule "vim/bundle/vim-sparkup"]
 	path = vim/bundle/vim-sparkup
 	url = git://github.com/kogakure/vim-sparkup.git
+  ignore = untracked
 [submodule "vim/bundle/gist-vim"]
 	path = vim/bundle/gist-vim
 	url = git://github.com/mattn/gist-vim.git
+  ignore = untracked
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+  ignore = untracked
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+  ignore = untracked
 [submodule "vim/bundle/fuzzyfinder"]
 	path = vim/bundle/fuzzyfinder
 	url = git://github.com/vim-bundles/fuzzyfinder.git
+  ignore = untracked
 [submodule "vim/bundle/Haml"]
 	path = vim/bundle/Haml
 	url = git://github.com/vim-scripts/Haml.git
+  ignore = untracked
 [submodule "vim/bundle/Markdown"]
 	path = vim/bundle/Markdown
 	url = git://github.com/vim-scripts/Markdown.git
+  ignore = untracked
 [submodule "vim/bundle/SuperTab"]
 	path = vim/bundle/SuperTab
 	url = git://github.com/vim-scripts/SuperTab.git
+  ignore = untracked
 [submodule "vim/bundle/Zephyr-Color-Scheme"]
 	path = vim/bundle/Zephyr-Color-Scheme
 	url = git://github.com/vim-scripts/Zephyr-Color-Scheme.git
+  ignore = untracked
 [submodule "vim/bundle/ZoomWin"]
 	path = vim/bundle/ZoomWin
 	url = git://github.com/vim-scripts/ZoomWin.git
+  ignore = untracked
 [submodule "vim/bundle/ack"]
 	path = vim/bundle/ack
 	url = git://github.com/vim-scripts/ack.vim.git
+  ignore = untracked
 [submodule "vim/bundle/darkburn"]
 	path = vim/bundle/darkburn
 	url = git://github.com/vim-scripts/darkburn.git
+  ignore = untracked
 [submodule "vim/bundle/file-line"]
 	path = vim/bundle/file-line
 	url = git://github.com/vim-scripts/file-line.git
+  ignore = untracked
 [submodule "vim/bundle/git"]
 	path = vim/bundle/git
 	url = git://github.com/vim-scripts/git.zip.git
+  ignore = untracked
 [submodule "vim/bundle/jQuery"]
 	path = vim/bundle/jQuery
 	url = git://github.com/vim-scripts/jQuery.git
+  ignore = untracked
 [submodule "vim/bundle/pathogen"]
 	path = vim/bundle/pathogen
 	url = git://github.com/vim-scripts/pathogen.vim.git
+  ignore = untracked
 [submodule "vim/bundle/perl-support"]
 	path = vim/bundle/perl-support
 	url = git://github.com/vim-scripts/perl-support.vim.git
+  ignore = untracked
 [submodule "vim/bundle/repeat"]
 	path = vim/bundle/repeat
 	url = git://github.com/vim-scripts/repeat.vim.git
+  ignore = untracked
 [submodule "vim/bundle/surround"]
 	path = vim/bundle/surround
 	url = git://github.com/vim-scripts/surround.vim.git
+  ignore = untracked
 [submodule "vim/bundle/taglist"]
 	path = vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
+  ignore = untracked
 [submodule "vim/bundle/unimpaired"]
 	path = vim/bundle/unimpaired
 	url = git://github.com/vim-scripts/unimpaired.vim.git
+  ignore = untracked
 [submodule "vim/bundle/vividchalk"]
 	path = vim/bundle/vividchalk
 	url = git://github.com/vim-scripts/vividchalk.vim.git
+  ignore = untracked
 [submodule "vim/bundle/Zenburn"]
 	path = vim/bundle/Zenburn
 	url = git://github.com/vim-scripts/Zenburn.git
+  ignore = untracked
 [submodule "vim/bundle/Command-T"]
 	path = vim/bundle/Command-T
 	url = git://github.com/vim-scripts/Command-T.git
+  ignore = untracked
