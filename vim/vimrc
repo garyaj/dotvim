@@ -8,10 +8,10 @@ endif
 set nocompatible
 
 filetype off
-call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+call pathogen#helptags()
 syntax on
 set tabstop=2
 set smarttab
@@ -207,7 +207,7 @@ inoremap jj <ESC>
 nmap <leader><tab> :Sscratch<cr><C-W>x<C-j>:resize 15<cr>
 
 " Diff
-nmap <leader>d :!hg diff %<cr>
+nmap <leader>d :!git diff %<cr>
 
 " Rainbows!
 nmap <leader>R :RainbowParenthesesToggle<CR>
@@ -258,6 +258,7 @@ if has('gui_running')
 	set go-=r
 	set go-=R
 
+  let Tlist_Show_Menu = 1
 	let g:sparkupExecuteMapping = '<D-e>'
 
 	highlight SpellBad term=underline gui=undercurl guisp=Orange
