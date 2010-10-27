@@ -106,3 +106,9 @@
 	path = vim/bundle/Command-T
 	url = git://github.com/vim-scripts/Command-T.git
   ignore = untracked
+[submodule "vim/bundle/jellybeans"]
+	path = vim/bundle/jellybeans
+	url = http://github.com/vim-scripts/jellybeans.vim.git
+[submodule "vim/bundle/matchit"]
+	path = vim/bundle/matchit
+	url = http://github.com/vim-scripts/matchit.zip.git

@@ -21,7 +21,7 @@ vim subdirectory e.g.:
 Then create a symbolic link to the vimrc file:
   ln -s dotvim/vim/vimrc .vimrc
 
-Then cd ~/.vim
+Then cd dotvim/vim
 git submodule update --init
 
 Credits
