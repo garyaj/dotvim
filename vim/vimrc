@@ -81,11 +81,13 @@ set listchars=tab:▸\ ,eol:¬
 " set background=light gives a different style, feel free to choose between them. 
 set background=dark 
 " colors neverland-ansi_bg 
-" colors elflord 
-	colors darkburn
+colors elflord 
+	"colors darkburn
 " colors peaksea 
 " colors vividchalk 
 " colors 256-jungle 
+hi Normal ctermbg=Black
+hi ColorColumn ctermbg=darkgrey
 
 " And make them fucking work, too.
 nnoremap j gj
@@ -243,8 +245,9 @@ set vb
 
 if has('gui_running')
 	set guifont=Menlo:h14
-	let g:darkburn_high_Contrast=1
-	colors darkburn
+  let g:darkburn_high_Contrast=1
+  colors darkburn
+	"colors jellybeans
 " let g:zenburn_high_Contrast=1
 " colors zenburn
 " colorscheme molokai
@@ -263,4 +266,5 @@ if has('gui_running')
 	let g:sparkupExecuteMapping = '<D-e>'
 
 	highlight SpellBad term=underline gui=undercurl guisp=Orange
+  highlight ColorColumn guibg=#232728
 endif
