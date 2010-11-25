@@ -1,0 +1,9 @@
+use Rose::DBx::Object::Renderer;
+
+my $renderer = Rose::DBx::Object::Renderer->new(
+	config => {db => {type => '${1:Pg}', name => '${2:demo}', username => '${3:postgres}', password => '', tables_are_singular => ${4:1}}},
+	load => ${5:}1
+);
+
+
+

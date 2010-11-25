@@ -1,0 +1,3 @@
+use Rose::DBx::Object::Builder;
+
+my $builder = Rose::DBx::Object::Builder->new(config => {db => {type => '${1:Pg}', name => '${2:demo}', username => '${3:postgres}', password => '', tables_are_singular => ${4:1}}});

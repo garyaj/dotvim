@@ -1,0 +1,12 @@
+$self->authen->config(
+	DRIVER => [
+		['Generic', sub {
+			my $username = shift;
+			my $password = shift;
+			return unless $username && $password;
+			return $username if $username eq 'admin' && $password eq 'password';
+		}],
+	],
+	STORE => ['Cookie', NAME => 'AUTH', SECRET => '39245872340', EXPIRY => '+1y']
+);
+
