@@ -80,9 +80,11 @@ set listchars=tab:▸\ ,eol:¬
 
 " set background=light gives a different style, feel free to choose between them. 
 set background=dark 
+let g:darkburn_high_Contrast=1
+colors darkburn
 " colors neverland-ansi_bg 
-colors elflord 
-	"colors darkburn
+" colors elflord 
+" colors darkburn
 " colors peaksea 
 " colors vividchalk 
 " colors 256-jungle 
@@ -195,6 +197,25 @@ au BufNewFile,BufRead *.less set nocursorline
 
 au BufNewFile,BufRead *.p[lm] set foldmethod=indent   "fold based on indent
 
+au BufWrite *.org :PreWriteTags
+au BufWritePost *.org :PostWriteTags
+
+function SetFileType()
+  set norelativenumber
+	if expand("%:e") == 'org'
+		execute "set filetype=org"
+		PreLoadTags
+	endif
+	if !exists('g:in_agenda_search')
+		setlocal foldmethod=expr
+		set foldlevel=1
+	endif
+	syntax on
+	colorscheme org_dark
+endfunction	
+
+au! BufRead,BufNewFile *.org		call SetFileType()
+
 " Easier linewise reselection
 map <leader>v V`]
 
@@ -243,16 +264,10 @@ inoremap # X<BS>#
 " no bell, please
 set vb
 
+let g:sparkupExecuteMapping = '<D-e>'
+
 if has('gui_running')
 	set guifont=Menlo:h14
-  let g:darkburn_high_Contrast=1
-  colors darkburn
-	"colors jellybeans
-" let g:zenburn_high_Contrast=1
-" colors zenburn
-" colorscheme molokai
-" colorscheme sri
-" set background=dark
 " set the screen width and height
   win 100 64
 
@@ -263,7 +278,6 @@ if has('gui_running')
 	set go-=R
 
   let Tlist_Show_Menu = 1
-	let g:sparkupExecuteMapping = '<D-e>'
 
 	highlight SpellBad term=underline gui=undercurl guisp=Orange
   highlight ColorColumn guibg=#232728

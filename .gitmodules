@@ -114,4 +114,4 @@
 	url = http://github.com/vim-scripts/matchit.zip.git
 [submodule "vim/bundle/VimOrganizer"]
 	path = vim/bundle/VimOrganizer
-	url = git://github.com/TheBigBear/VimOrganizer.git
+	url = git@github.com:garyaj/VimOrganizer.git
