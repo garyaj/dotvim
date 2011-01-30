@@ -1,0 +1,189 @@
+# Builder Build
+snippet bld
+	$builder->build();
+# Builder Parse
+snippet parse
+	print $builder->parse(${1:$text});
+# Builder Show
+snippet show
+	print $builder->show(${1:$text});
+# Builder Text
+snippet text
+	my $text = '';
+# Builder
+snippet bldr
+	use Rose::DBx::Object::Builder;
+	
+	my $builder = Rose::DBx::Object::Builder->new(config => {db => {type => '${1:Pg}', name => '${2:demo}', username => '${3:postgres}', password => '', tables_are_singular => ${4:1}}});
+# CGI Application Authen
+snippet authen
+	$self->authen->config(
+		DRIVER => [
+			['Generic', sub {
+				my $username = shift;
+				my $password = shift;
+				return unless $username && $password;
+				return $username if $username eq 'admin' && $password eq 'password';
+			}],
+		],
+		STORE => ['Cookie', NAME => 'AUTH', SECRET => '39245872340', EXPIRY => '+1y']
+	);
+
+# CGI Application
+snippet cgiapp
+	package Application;
+	use strict;
+	use warnings;
+	
+	use base 'CGI::Application';
+	use CGI::Application::Plugin::AutoRunmode;
+	use CGI::Application::Plugin::Authentication;
+	
+	use Rose::DBx::Object::Renderer;
+	
+	sub setup {
+		my $self = shift;
+	}
+	
+	sub start: Runmode {
+		my $self = shift;
+		return 'Hello World';
+	} 
+	
+	sub admin: Runmode Authen {
+		my $self = shift;
+		return 'Admin Area';
+	}
+	
+	1;
+# CGI
+snippet cgi
+	use CGI;
+	use CGI::Carp qw(fatalsToBrowser);
+	my $query = new CGI;
+	print $query->header();
+# Demo Application
+snippet App
+	Application::${1:Table}
+# Demo Drop
+snippet drop
+	DROP TABLE employee_project_map;
+	DROP TABLE employee;
+	DROP TABLE project;
+	DROP TABLE position;
+
+# Demo Employee
+snippet emp
+	Employee has a first name (required), last name (required), email(unique), photo, gender, position (has a title and description), and address.
+	Projects have name, description, date, image, and cost.
+	Employees have many projects and vice versa.
+# Demo Package
+snippet Demo
+	Demo::${1:Table}
+# Lorum Ipsum
+snippet lorem
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# Perl
+snippet perl
+	#!/usr/bin/perl
+	use strict;
+	use warnings;
+# Renderer
+snippet rndr Simple
+	use Rose::DBx::Object::Renderer;
+	
+	my $renderer = Rose::DBx::Object::Renderer->new(
+		config => {db => {type => '${1:Pg}', name => '${2:demo}', username => '${3:postgres}', password => '', tables_are_singular => ${4:1}}},
+		load => ${5:}1
+	);
+	
+# Renderer 
+snippet rndr With templates
+	use Rose::DBx::Object::Renderer;
+	
+	my $renderer = Rose::DBx::Object::Renderer->new(
+		config => {
+			db => {type => '${1:Pg}', name => '${2:demo}', username => '${3:postgres}', password => '', tables_are_singular => ${4:1}}},
+			template => {path => '${5:../templates}'},
+			upload => {path => '${6:../htdocs/uploads}', url => '${7:/uploads}'},
+		},
+		load => ${8:1},
+	);
+# Renderer Before Args
+snippet args
+	$args->{${1:name}} = ${2:};
+# Renderer Before
+snippet before
+	before => sub {
+		my ($object, $args) = @_;
+		${2:}	
+	},
+# Renderer Chart
+snippet chart
+	${1:Package}::${2:Table}::Manager->render_as_chart(
+		type => 'pie',
+		values => ['${3:A}', '${4:B}'],
+		column => '${5:name}',
+	);
+# Renderer Columns
+snippet cols
+	columns => {
+		'${1:name}' => {
+			${2:}
+		}
+	},
+# Renderer Controller Order
+snippet conto
+	controller_order => ['${1:}', '${2:}'],
+# Renderer Controllers
+snippet cont
+	controllers => {
+		'${1:name}' => sub {
+			my $object = shift;
+			${2:}	
+		}
+	},
+# Renderer CRUD
+snippet crud
+	create => 1,
+	edit => 1,
+	copy => 1,
+	delete => 1,
+	searchable => 1,
+# Renderer Form
+snippet form
+	${1:Package}::${2:Table}->render_as_form();
+# Renderer Format
+snippet fmt
+	format => {
+		${1:for_view} => sub {
+			my ($object, $column) = @_;
+			my $value = $object->$column;
+			return unless $value;
+			return $value;
+		}
+	},
+# Renderer Menu Items
+snippet items
+	items => {
+		'${1:Package}::${2:Table}' => {
+			order => ['${3:}', '${4:}'],
+		},
+	},
+# Renderer Menu
+snippet menu
+	${1:Package}::${2:Table}::Manager->render_as_menu(${3:});
+# Renderer Order
+snippet order
+	order => ['${1:}', '${2:}'],
+# Renderer Output
+snippet out
+	output => 1,
+# Renderer Table
+snippet tbl
+	${1:Package}::${2:Table}::Manager->render_as_table();
+# Renderer Template
+snippet tmpl
+	template => ${1:1},
+	
+

@@ -1,0 +1,8 @@
+" setup pathogen
+call pathogen#runtime_append_all_bundles()
+" Sparkup config
+let g:sparkupExecuteMapping='<D-e>'
+let g:sparkupNextMapping='<D-n>'
+" reload
+filetype off
+filetype plugin indent on

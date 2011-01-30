@@ -24,6 +24,7 @@ my $git_bundles = [
   "git://github.com/vim-scripts/ZoomWin.git",
   "git://github.com/vim-scripts/ack.vim.git",
   "git://github.com/vim-scripts/darkburn.git",
+  "git://github.com/vim-scripts/dbext.vim.git",
   "git://github.com/vim-scripts/file-line.git",
   "git://github.com/vim-scripts/fugitive.vim.git",
   "git://github.com/vim-scripts/git.zip.git",

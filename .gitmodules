@@ -115,3 +115,6 @@
 [submodule "vim/bundle/VimOrganizer"]
 	path = vim/bundle/VimOrganizer
 	url = git@github.com:garyaj/VimOrganizer.git
+[submodule "vim/bundle/dbext"]
+	path = vim/bundle/dbext
+	url = git://github.com/vim-scripts/dbext.vim.git
