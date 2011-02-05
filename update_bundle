@@ -45,5 +45,18 @@ foreach my $url (@$git_bundles) {
   $dirname =~ s/\.(vim|git|zip)//g;
   warn "* Unpacking $url into $dirname\n";
   my $dir = "vim/bundle/$dirname";
-  `cd $dir 2>/dev/null && git pull || git submodule add $url $dir`;
+  if (-d $dir) {
+    chdir $dir or die "$0: can't chdir: $!";
+    `git checkout ${dirname}_branch`;
+    `git pull`;
+    `git checkout master`;
+    `git merge --squash -s subtree --no-commit ${dirname}_branch`;
+  } else {
+    `git remote add ${dirname}_remote $url`;
+    `git fetch ${dirname}_remote`;
+    `git checkout -b ${dirname}_branch ${dirname}_remote/master`;
+    `git checkout master`;
+    `git read-tree --prefix=${dir}/ -u ${dirname}_branch`;
+  }
 }
+# vi:ai:et:sw=2 ts=2
