@@ -8,10 +8,10 @@ endif
 set nocompatible
 
 filetype off
+call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
-call pathogen#helptags()
 syntax on
 set tabstop=2
 set smarttab
@@ -124,12 +124,6 @@ function! MyFoldText()
 	return line . '…' . repeat(" ",fillcharcount) . foldedlinecount . '…' . ' '
 endfunction
 set foldtext=MyFoldText()
-
-" Fuck you, help key.
-set fuoptions=maxvert,maxhorz
-inoremap <F1> <ESC>:set invfullscreen<CR>a
-nnoremap <F1> :set invfullscreen<CR>
-vnoremap <F1> :set invfullscreen<CR>
 
 " Various syntax stuff
 au BufNewFile,BufRead *.less set filetype=less
@@ -275,6 +269,12 @@ if has('gui_running')
 " set winminwidth=0 winwidth=99999
   set winminheight=0 winheight=99999
 " win 100 64
+
+" Fuck you, help key. These only work in GVim
+  set fuoptions=maxvert,maxhorz
+  inoremap <F1> <ESC>:set invfullscreen<CR>a
+  nnoremap <F1> :set invfullscreen<CR>
+  vnoremap <F1> :set invfullscreen<CR>
 
 	set go-=T
 	set go-=l
