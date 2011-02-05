@@ -47,7 +47,6 @@ foreach my $url (@$git_bundles) {
   warn "* Unpacking $url into $dirname\n";
   my $dir = "vim/bundle/$dirname";
   if (-d $dir) {
-    chdir $dir or die "$0: can't chdir: $!";
     `git checkout ${dirname}_branch`;
     `git pull`;
     `git checkout master`;
