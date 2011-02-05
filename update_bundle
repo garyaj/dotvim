@@ -9,7 +9,7 @@ use warnings;
 use File::Basename;
 
 my $git_bundles = [ 
-  "git://github.com/chrismetcalf/vim-yankring.git",
+#  "git://github.com/chrismetcalf/vim-yankring.git",
   "git://github.com/gmarik/snipmate.vim.git",
   "git://github.com/kogakure/vim-sparkup.git",
   "git://github.com/mattn/gist-vim.git",
