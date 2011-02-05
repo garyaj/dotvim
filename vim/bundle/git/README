@@ -1,0 +1,7 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1654
+
+Included are syntax, indent, and filetype plugin files for git, gitcommit, gitconfig, gitrebase, and gitsendemail.
+
+Earlier versions of these files are shipped with Vim as of 7.2. The latest versions of these files can be retrieved from http://github.com/tpope/vim-git, which is the official distribution.
+
+If you're looking for a Vim interface to Git, be sure to try fugitive.vim: vimscript #2975 http://github.com/tpope/vim-fugitive
