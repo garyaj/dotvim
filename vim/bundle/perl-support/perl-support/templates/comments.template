@@ -56,6 +56,7 @@ use strict;
 use warnings;
 
 
+# vi:ai:et:sw=2 ts=2
 §%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == comment.file-description-pm == start ==
 #
@@ -79,6 +80,7 @@ use strict;
 use warnings;
 
 
+# vi:ai:et:sw=2 ts=2
 §%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == comment.file-description-t == start ==
 #
@@ -104,6 +106,7 @@ use warnings;
 use Test::More tests => 1;                      # last test to print
 
 
+# vi:ai:et:sw=2 ts=2
 §%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == comment.file-description-pod == start ==
 #
