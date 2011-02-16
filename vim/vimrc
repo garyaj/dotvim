@@ -141,10 +141,10 @@ map <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
 map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Exuberant ctags!
-let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+"let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
-map <F5> :!/usr/local/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
+"map <F5> :!/usr/local/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
 
 " Ack
 map <leader>a :Ack 
@@ -190,7 +190,7 @@ au BufNewFile,BufRead *.less set foldmarker={,}
 au BufNewFile,BufRead *.less set nocursorline
 
 au BufNewFile,BufRead *.p[lm] set foldmethod=indent   "fold based on indent
-au BufNewFile,BufRead *.p[lm] set filetype=perl.rdor
+"au BufNewFile,BufRead *.p[lm] set filetype=perl.rdor
 
 au BufWrite *.org :PreWriteTags
 au BufWritePost *.org :PostWriteTags
@@ -261,9 +261,10 @@ inoremap # X<BS>#
 set vb
 
 let g:sparkupExecuteMapping = '<D-e>'
+let tlist_perl_settings  = 'perl;c:constants;f:formats;l:labels;p:packages;s:subroutines;d:subroutines;o:POD'
 
 if has('gui_running')
-	set guifont=Menlo:h14
+  set guifont=Menlo:h14
 " set the screen width and height
 " set lines=99999 columns=99999
 " set winminwidth=0 winwidth=99999
