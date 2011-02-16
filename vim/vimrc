@@ -55,7 +55,7 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-runtime plugin/matchit.vim
+runtime macros/matchit.vim
 nnoremap <tab> %
 vnoremap <tab> %
 
@@ -267,8 +267,8 @@ if has('gui_running')
 " set the screen width and height
 " set lines=99999 columns=99999
 " set winminwidth=0 winwidth=99999
-  set winminheight=0 winheight=99999
-" win 100 64
+" set winminheight=0 winheight=99999
+win 100 64
 
 " Fuck you, help key. These only work in GVim
   set fuoptions=maxvert,maxhorz
