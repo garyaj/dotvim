@@ -1,8 +1,0 @@
-format => {
-	${1:for_view} => sub {
-		my ($object, $column) = @_;
-		my $value = $object->$column;
-		return unless $value;
-		return $value;
-	}
-},
