@@ -30,6 +30,7 @@ my $git_bundles = [
   "git://github.com/vim-scripts/fugitive.vim.git",
   "git://github.com/vim-scripts/git.zip.git",
   "git://github.com/vim-scripts/jQuery.git",
+  "git://github.com/vim-scripts/mojo.vim.git",
   "git://github.com/vim-scripts/pathogen.vim.git",
   "git://github.com/vim-scripts/perl-support.vim.git",
   "git://github.com/vim-scripts/repeat.vim.git",

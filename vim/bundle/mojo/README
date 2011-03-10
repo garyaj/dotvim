@@ -1,0 +1,6 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3168
+
+Syntax file for Mojolicious (http://mojolicio.us) epl templates.
+Designed to highlight syntax of both html.ep and html.epl formats and (optional) __DATA__ section of Perl files.
+
+mojo.vim lives at http://github.com/yko/mojo.vim
