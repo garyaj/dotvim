@@ -62,8 +62,8 @@ vnoremap <tab> %
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
-map <F2> :NERDTreeToggle<CR>
-let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
+"map <F2> :NERDTreeToggle<CR>
+"let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
 
 set shiftround                    "Indent/outdent to nearest tabstop
 set matchpairs+=<:>               "Allow % to bounce between angles too
@@ -142,16 +142,16 @@ map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Exuberant ctags!
 "let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
-let Tlist_WinWidth = 50
-map <F4> :TlistToggle<cr>
+"let Tlist_WinWidth = 50
+"map <F4> :TlistToggle<cr>
 "map <F5> :!/usr/local/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
 
 " Ack
 map <leader>a :Ack 
 
 " Yankring
-nnoremap <silent> <F3> :YRShow<cr>
-nnoremap <silent> <leader>y :YRShow<cr>
+"nnoremap <silent> <F3> :YRShow<cr>
+"nnoremap <silent> <leader>y :YRShow<cr>
 
 " Formatting, TextMate-style
 map <leader>q gqip

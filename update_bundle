@@ -40,6 +40,8 @@ my $git_bundles = [
   "git://github.com/garyaj/VimOrganizer.git",
   "git://github.com/vim-scripts/vividchalk.vim.git",
   "git://github.com/vim-scripts/Zenburn.git",
+  "git://github.com/garyaj/vim-colors-solarized.git",
+  "git://github.com/garyaj/vim-dbgpclient.git",
 ];
 
 foreach my $url (@$git_bundles) {
